@@ -1,11 +1,22 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
+}
+
+.spotlight {
+  width: 100%;
+  max-height: 50vh;
+  padding: 1rem 0;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
@@ -69,12 +80,20 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
+.grids {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 1rem;
+}
+
 .grid {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 40%;
   margin-top: 3rem;
 }
 
@@ -87,7 +106,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  width: 100%;
 }
 
 .card:hover,
